@@ -39,7 +39,9 @@ const createHeader = () => {
     const left = createDiv('left');
     left.addEventListener('click',() => {
         reset();
+        window.scrollTo(0,0);
         createHome();
+        createFooter();
     })
     header.appendChild(left);
     let right = createDiv('right');
@@ -49,6 +51,7 @@ const createHeader = () => {
     homeButton.innerHTML= 'Home';
     homeButton.addEventListener('click', () =>{
         reset();
+        window.scrollTo(0,0);
         createHome();
         createFooter();
     })
@@ -58,6 +61,7 @@ const createHeader = () => {
         reset();
         createAboutUs();
         createFooter();
+        window.scrollTo(0,0);
     })
     const menuButton = document.createElement('li');
     menuButton.innerHTML = 'Menu';
@@ -65,6 +69,7 @@ const createHeader = () => {
         reset();
         createMenu();
         createFooter();
+        window.scrollTo(0,0);
     })
     const contactButton = document.createElement('li');
     contactButton.innerHTML = 'Contact Us';
@@ -72,6 +77,7 @@ const createHeader = () => {
         reset();
         createContact();
         createFooter();
+        window.scrollTo(0,0);
     })
     headerlist.appendChild(homeButton);
     headerlist.appendChild(aboutUsButton);

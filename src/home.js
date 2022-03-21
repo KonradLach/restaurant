@@ -14,7 +14,7 @@ const createMap = () =>{
     var marker = L.marker([46.421,-117.025]).addTo(map);
 
 }
-
+let slideIndex = 0;
 
 const createSection = (idName) =>{
     let section = document.createElement("section");
