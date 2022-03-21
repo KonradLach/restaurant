@@ -68,10 +68,12 @@ const createHome = () => {
     rightSideAboutUs.appendChild(createH('2','Our Story'));
     rightSideAboutUs.appendChild(aboutUsPara);
     const aboutContainer = createDiv('aboutContainer');
+    aboutSection.appendChild(aboutContainer);
+    aboutContainer.appendChild(createDiv('rightAbout')).appendChild(rightSideAboutUs);
     aboutContainer.appendChild(createDiv('picture1'));
     aboutContainer.appendChild(createDiv('picture2'));
-    aboutContainer.appendChild(createDiv('rightAbout')).appendChild(rightSideAboutUs);
-    aboutSection.appendChild(aboutContainer);
+    
+    // aboutSection.appendChild(aboutContainer);
 
     const menuSection = createSection('menu');
     content.appendChild(menuSection);
