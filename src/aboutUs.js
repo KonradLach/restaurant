@@ -14,9 +14,10 @@ const createAboutUs = () =>{
     rightSideAboutUs.appendChild(createH('2','Our Story'));
     rightSideAboutUs.appendChild(aboutUsPara);
     const aboutContainer = createDiv('aboutContainer');
+    aboutContainer.appendChild(createDiv('rightAbout')).appendChild(rightSideAboutUs);
     aboutContainer.appendChild(createDiv('picture1'));
     aboutContainer.appendChild(createDiv('picture2'));
-    aboutContainer.appendChild(createDiv('rightAbout')).appendChild(rightSideAboutUs);
+    
     aboutSection.appendChild(aboutContainer);
     const lowerDiv = createDiv('lowerDiv');
     const breweryImg = document.createElement('img');
