@@ -201,6 +201,24 @@ h1{
     text-underline-offset: 3px;
 }
 
+#specialsDiv{
+    margin-left: auto;
+    margin-right: auto;
+
+}
+#specialsDiv p{
+    text-align: center;
+    font-size: 40px;
+    padding-top: 30px;
+}
+.slide{
+    max-width: 75%;
+    max-height: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 40px;
+}
+
 #contactSection{
     width: 100%;
 }
@@ -334,6 +352,11 @@ h1{
     #map{
         margin-left: auto;
         margin-right: auto;
+    }
+    #specialsDiv p{
+        text-align: center;
+        font-size: 25px;
+        padding-top: 30px;
     }
 
 }
