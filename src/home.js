@@ -14,7 +14,6 @@ const createMap = () =>{
     var marker = L.marker([46.421,-117.025]).addTo(map);
 
 }
-let slideIndex = 0;
 
 const createSection = (idName) =>{
     let section = document.createElement("section");
@@ -63,9 +62,8 @@ const createHome = () => {
     const aboutSection = createSection('about');
     content.appendChild(aboutSection);
     const aboutUsPara = createDiv('aboutUsPara');
-    for (let index = 0; index < 3; index++) {
-        aboutUsPara.appendChild(createPara('Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quam at labore placeat modi soluta porro dolorem distinctio, sunt expedita eos voluptatem ea mollitia, libero inventore doloremque autem minima dolorum dolore'));
-    }
+    aboutUsPara.appendChild(createPara('Our ongoing goal is to serve the finest quality food and drinks. Always fresh, always refreshing. We strive to bring an authentic and enjoyable experience to all of our customers through our unique menu items and winery experience.'));
+    aboutUsPara.appendChild(createPara('We look forward to sharing everything Beer & Wine has to offer with you. Please be sure to check our site regularly for our daily specials and other unique offers'));
     const rightSideAboutUs = createDiv('rightSideAboutUs');
     rightSideAboutUs.appendChild(createH('2','Our Story'));
     rightSideAboutUs.appendChild(aboutUsPara);

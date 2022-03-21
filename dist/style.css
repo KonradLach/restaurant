@@ -358,10 +358,26 @@ h1{
         font-size: 25px;
         padding-top: 30px;
     }
+    #mainOverlay{
+        height: 60vh;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    
+    }
 
 }
 @media (max-width:425px) {
     #headerButtons li{
         font-size: 12px;
+    }
+    #mainOverlay{
+        height: 50vh;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    
     }
 }
