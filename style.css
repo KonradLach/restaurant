@@ -35,7 +35,7 @@ h1{
     font-weight: 700;
 
 }
-
+/* Header Bar */
 #header{
     width: 100%;
     position: fixed;
@@ -47,6 +47,7 @@ h1{
     z-index: 100;
 
 }
+/* Left Side of header  */
 #left{
     width: clamp(100px,20%,250px);
     height: 50px;
@@ -60,8 +61,10 @@ h1{
     background-position-y: center;
     cursor: pointer;
 }
+/* Right side of header */
 #right{width: clamp(220px,90%,90%);}
 
+/* Nav Buttons */
 #headerButtons{
 
     height: 40px;
@@ -85,6 +88,7 @@ h1{
 
 }
 
+/* overlapping logo on main image */
 #title{
     height: 750px;
     width: 100%;
@@ -96,6 +100,7 @@ h1{
 
 }
 
+/* main picture on home page */
 #mainOverlay{
     background-image: url('img/backgroundImage.jpg');
     background-repeat: no-repeat;
