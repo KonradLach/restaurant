@@ -10,6 +10,16 @@
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
+/***/ "./src/contact.js":
+/*!************************!*\
+  !*** ./src/contact.js ***!
+  \************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"createContact\": () => (/* binding */ createContact)\n/* harmony export */ });\n/* harmony import */ var _home__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./home */ \"./src/home.js\");\n\nconst createContact = () => {\n    const contactSection = (0,_home__WEBPACK_IMPORTED_MODULE_0__.createSection)('contact');\n    content.appendChild(contactSection);\n    const contactContainer = (0,_home__WEBPACK_IMPORTED_MODULE_0__.createDiv)('contactContainer');\n    contactContainer.appendChild((0,_home__WEBPACK_IMPORTED_MODULE_0__.createH)('2','Contact Us'));\n    contactSection.appendChild(contactContainer);\n\n    const contactFlex = (0,_home__WEBPACK_IMPORTED_MODULE_0__.createDiv)('contactFlex');\n    const contactInfo = (0,_home__WEBPACK_IMPORTED_MODULE_0__.createDiv)('contactInfo');\n    contactInfo.appendChild((0,_home__WEBPACK_IMPORTED_MODULE_0__.createPara)('(123)-456-7890'));\n    contactInfo.appendChild((0,_home__WEBPACK_IMPORTED_MODULE_0__.createPara)('123 Main St'));\n    contactInfo.appendChild((0,_home__WEBPACK_IMPORTED_MODULE_0__.createPara)('Lewiston, ID'));\n    const mapDiv = (0,_home__WEBPACK_IMPORTED_MODULE_0__.createDiv)('map');\n    contactFlex.appendChild(contactInfo);\n    contactFlex.appendChild(mapDiv);\n    contactContainer.appendChild(contactFlex);\n    (0,_home__WEBPACK_IMPORTED_MODULE_0__.createMap)();\n}\n\n\n\n\n//# sourceURL=webpack://restaurant/./src/contact.js?");
+
+/***/ }),
+
 /***/ "./src/home.js":
 /*!*********************!*\
   !*** ./src/home.js ***!
@@ -22,8 +32,29 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 
 /******/ 	});
 /************************************************************************/
-/******/ 	// The require scope
-/******/ 	var __webpack_require__ = {};
+/******/ 	// The module cache
+/******/ 	var __webpack_module_cache__ = {};
+/******/ 	
+/******/ 	// The require function
+/******/ 	function __webpack_require__(moduleId) {
+/******/ 		// Check if module is in cache
+/******/ 		var cachedModule = __webpack_module_cache__[moduleId];
+/******/ 		if (cachedModule !== undefined) {
+/******/ 			return cachedModule.exports;
+/******/ 		}
+/******/ 		// Create a new module (and put it into the cache)
+/******/ 		var module = __webpack_module_cache__[moduleId] = {
+/******/ 			// no module.id needed
+/******/ 			// no module.loaded needed
+/******/ 			exports: {}
+/******/ 		};
+/******/ 	
+/******/ 		// Execute the module function
+/******/ 		__webpack_modules__[moduleId](module, module.exports, __webpack_require__);
+/******/ 	
+/******/ 		// Return the exports of the module
+/******/ 		return module.exports;
+/******/ 	}
 /******/ 	
 /************************************************************************/
 /******/ 	/* webpack/runtime/define property getters */
@@ -59,8 +90,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /******/ 	// startup
 /******/ 	// Load entry module and return exports
 /******/ 	// This entry module can't be inlined because the eval devtool is used.
-/******/ 	var __webpack_exports__ = {};
-/******/ 	__webpack_modules__["./src/home.js"](0, __webpack_exports__, __webpack_require__);
+/******/ 	var __webpack_exports__ = __webpack_require__("./src/contact.js");
 /******/ 	
 /******/ })()
 ;

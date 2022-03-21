@@ -10,6 +10,16 @@
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
+/***/ "./src/aboutUs.js":
+/*!************************!*\
+  !*** ./src/aboutUs.js ***!
+  \************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"createAboutUs\": () => (/* binding */ createAboutUs)\n/* harmony export */ });\n/* harmony import */ var _home__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./home */ \"./src/home.js\");\n\n\nconst createAboutUs = () =>{\n    const aboutSection = (0,_home__WEBPACK_IMPORTED_MODULE_0__.createSection)('about');\n    content.appendChild(aboutSection);\n    const aboutUsPara = (0,_home__WEBPACK_IMPORTED_MODULE_0__.createDiv)('aboutUsPara');\n    for (let index = 0; index < 3; index++) {\n        aboutUsPara.appendChild((0,_home__WEBPACK_IMPORTED_MODULE_0__.createPara)('Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quam at labore placeat modi soluta porro dolorem distinctio, sunt expedita eos voluptatem ea mollitia, libero inventore doloremque autem minima dolorum dolore'));\n    }\n    const rightSideAboutUs = (0,_home__WEBPACK_IMPORTED_MODULE_0__.createDiv)('rightSideAboutUs');\n    rightSideAboutUs.appendChild((0,_home__WEBPACK_IMPORTED_MODULE_0__.createH)('2','Our Story'));\n    rightSideAboutUs.appendChild(aboutUsPara);\n    const aboutContainer = (0,_home__WEBPACK_IMPORTED_MODULE_0__.createDiv)('aboutContainer');\n    aboutContainer.appendChild((0,_home__WEBPACK_IMPORTED_MODULE_0__.createDiv)('picture1'));\n    aboutContainer.appendChild((0,_home__WEBPACK_IMPORTED_MODULE_0__.createDiv)('picture2'));\n    aboutContainer.appendChild((0,_home__WEBPACK_IMPORTED_MODULE_0__.createDiv)('rightAbout')).appendChild(rightSideAboutUs);\n    aboutSection.appendChild(aboutContainer);\n    const lowerDiv = (0,_home__WEBPACK_IMPORTED_MODULE_0__.createDiv)('lowerDiv');\n    const breweryImg = document.createElement('img');\n    breweryImg.src = \"img/aboutPicture3.jpeg\";\n    lowerDiv.appendChild((0,_home__WEBPACK_IMPORTED_MODULE_0__.createPara)('We are a family-owned business and want to provide our customers with delicious, award-winning, quality wines that are all hand-crafted locally. We provide an wide selection of wines with something to satisfy every person, from unique, fruit-infused wines to traditional white and red varietals and more!'))\n    lowerDiv.appendChild(breweryImg);\n    aboutSection.appendChild(lowerDiv);\n\n};\n\n\n//# sourceURL=webpack://restaurant/./src/aboutUs.js?");
+
+/***/ }),
+
 /***/ "./src/home.js":
 /*!*********************!*\
   !*** ./src/home.js ***!
@@ -22,8 +32,29 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 
 /******/ 	});
 /************************************************************************/
-/******/ 	// The require scope
-/******/ 	var __webpack_require__ = {};
+/******/ 	// The module cache
+/******/ 	var __webpack_module_cache__ = {};
+/******/ 	
+/******/ 	// The require function
+/******/ 	function __webpack_require__(moduleId) {
+/******/ 		// Check if module is in cache
+/******/ 		var cachedModule = __webpack_module_cache__[moduleId];
+/******/ 		if (cachedModule !== undefined) {
+/******/ 			return cachedModule.exports;
+/******/ 		}
+/******/ 		// Create a new module (and put it into the cache)
+/******/ 		var module = __webpack_module_cache__[moduleId] = {
+/******/ 			// no module.id needed
+/******/ 			// no module.loaded needed
+/******/ 			exports: {}
+/******/ 		};
+/******/ 	
+/******/ 		// Execute the module function
+/******/ 		__webpack_modules__[moduleId](module, module.exports, __webpack_require__);
+/******/ 	
+/******/ 		// Return the exports of the module
+/******/ 		return module.exports;
+/******/ 	}
 /******/ 	
 /************************************************************************/
 /******/ 	/* webpack/runtime/define property getters */
@@ -59,8 +90,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /******/ 	// startup
 /******/ 	// Load entry module and return exports
 /******/ 	// This entry module can't be inlined because the eval devtool is used.
-/******/ 	var __webpack_exports__ = {};
-/******/ 	__webpack_modules__["./src/home.js"](0, __webpack_exports__, __webpack_require__);
+/******/ 	var __webpack_exports__ = __webpack_require__("./src/aboutUs.js");
 /******/ 	
 /******/ })()
 ;
