@@ -316,10 +316,10 @@ h1{
         margin-bottom: 10px;
     }
     #picture2{
-        margin-bottom: 20px;
+        margin-bottom: 10px;
     }
     #rightAbout{
-        margin: 40px;
+        margin:0 40px 40px 40px;
     }
     #menuContainer{
         display: block;
